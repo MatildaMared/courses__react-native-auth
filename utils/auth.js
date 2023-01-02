@@ -10,6 +10,8 @@ export async function login(email, password) {
 			returnSecureToken: true,
 		}
 	);
+
+	console.log(response.data);
 }
 
 export async function createUser(email, password) {
