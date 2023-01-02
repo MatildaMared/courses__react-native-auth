@@ -10,10 +10,12 @@
     "eject": "NODE_OPTIONS=--openssl-legacy-provider expo eject"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "~1.17.3",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
     "axios": "^1.2.2",
     "expo": "^47.0.0",
+    "expo-app-loading": "^2.1.1",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
