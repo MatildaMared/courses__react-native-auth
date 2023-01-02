@@ -15,7 +15,7 @@ function LoginScreen() {
 		} catch (error) {
 			Alert.alert(
 				"Authentication failed",
-				"Please check your credentials or try again!"
+				"Please check your credentials or try again."
 			);
 		}
 		setIsLoading(false);
