@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Alert, StyleSheet, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { createUser } from "../../utils/auth";
 
 import FlatButton from "../ui/FlatButton";
 import AuthForm from "./AuthForm";
@@ -26,7 +25,6 @@ function AuthContent({ isLogin, onAuthenticate }) {
 	}
 
   function submitHandler(credentials) {
-    createUser();
 		let { email, confirmEmail, password, confirmPassword } = credentials;
 
 		email = email.trim();
