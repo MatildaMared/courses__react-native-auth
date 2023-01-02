@@ -11,7 +11,8 @@ export async function login(email, password) {
 		}
 	);
 
-	console.log(response.data);
+	const token = response.data.idToken;
+	return token;
 }
 
 export async function createUser(email, password) {
@@ -23,4 +24,7 @@ export async function createUser(email, password) {
 			returnSecureToken: true,
 		}
 	);
+
+	const token = response.data.idToken;
+	return token;
 }
